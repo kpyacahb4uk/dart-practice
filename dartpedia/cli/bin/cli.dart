@@ -17,3 +17,7 @@ void printUsage() {
     "The following commands are valid: 'help', 'version', 'search <ARTICLE-TITLE>'"
   );
 }
+
+void searchWikipedia(List<String>? arguments) {
+  print('searchWikipedia received arguments: $arguments');
+}
