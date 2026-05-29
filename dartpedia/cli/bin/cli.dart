@@ -6,7 +6,8 @@ void main(List<String> arguments) {
   } else if (arguments.first == 'version') {
     print('Dartpedia CLI version $version');
   } else if (arguments.first == 'search') {
-    print('Search command recognized!');
+    final inputArgs = arguments.length > 1 ? arguments.sublist(1) : null;
+    searchWikipedia(inputArgs);
   } else {
     printUsage();
   }
